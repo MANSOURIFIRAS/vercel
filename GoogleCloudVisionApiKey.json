@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "roadbud-app",
+    "private_key_id": "245788ad5cfff780b126d4aae2cb3e0f7115e152",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCz5CuSv5sseEqC\n1nhUCX/51CWg7pzrTo3Jt6vPhhnG9vFXKQXm8+9eBMDzyZN9hNRrpPIjgQidThcd\nBQoRmh6HHCabZo53Ox/u9hUDYkOOcqAXd+axFMI7QmFN20uDEvklaLKa7K5oBW1I\nOLEOUYeBWSJHFAu4lGgxNWThG2yDiiml8vW3HK82ctyWhDsWgpzC+KtUOPqSyr95\nuIAMY7ciLo+utzHiZY5Qf1mDDH3O7CH1autvxzkN0uMRcctR8I+21OUgwyXr1bOE\nB9gijtG3w33NufAmx8/InA63xzaD310RFRBH2CD1MafMOzABapm5TkxcYggphStc\nGi0JJoCDAgMBAAECggEAAoPl3rxnxVxn4PfHYO1tE6eACzBVk1iwKiozmx2LOLlK\nhecgmlUTe2NiS0ZTQJsIg/ofb0L7mtofqpvfwyqTfgd1EWaCsW9rMo0lnWbUqPuN\n+iYGsg0nQMAx2hkp2iBRdCYdm9ruqVesv9Ntw6nSKjXT1oiU4rTN1s+h+cpyCaNx\nJ9nXYHLsJydhvUpfoVWvBlAAjFX0WPKyskPurubDdvunnlRdCjBD7lrC4R+4UE32\nAKKj9wtCd8jFrc8akrciPIZi79OHu1cKqANMEQOJWtqLInLAtzyB0UG2640MSciR\nvJJge97R+u6YivmS/wi7K3/HRT3SXe7EovUzo7rtIQKBgQD8+q3LifQcXi9ehl5T\ncANe3SHO1qJzLEW6ZxoVe5PoBCx7PN3dlVAos0kuKPOm+GehnElwgQzpY8JtBeJ4\nVAGCzqP/tFmVe+prQxQu/Em5ME/mWBHcRZw9Xc5Vdf/c5Ru68aapArXF0wis255x\nsi7EXbrcEJ1zyUcg+b2qdZcS8QKBgQC2ChJw9pjOnAx8Ssj9DrWGuPIXt3bcowm6\nlUiR0VDHFg8isnuK534JJ36l76yZXmcspg73h0vokBvJOr3feX/Hn9hkSwlNs/ak\n/aK2kNKK3tS5W/xPS9Q0tOAc614p/MRTfG5jSivNpyrldHG6Uko19PeE3vjult5t\nu1c4p4RiswKBgArXz8Uul4jzvIIHrllTLsHNJprP9kyLdD2mF6ceEdva+fEaTcQm\nlzX3YUaaOL9KXF6/7SHmViBWx0mW+/r+VsY9hyf5mfFfS0/noyDUbXCDkpkj4zgW\nv7idoa9mDF5yb3rWyrbpx9K/1dpa23KyGXEPN2ghSi5hTSwrqCZ7PctxAoGBAIMk\n8nArV57RUTVh8zZMGH68Ury/UYRWeLXQwn06nMUwoSrQBqzlZSlXKKiG6IN9PTsv\nTu0IrakX2My54vxSXboE8DIg1M0D75ahm02HPAcLzZjUKgs+h9yIykRLVIVPMmkq\n5aPmVXRNEFxJ7Xzbt9bzajZxJElOq2PGaWnJVVh9AoGBALFXFpmVc2EqaR7Eg9Tt\nK47qIQxOzdn7kvd5sy3pa4SRXUGQmaoZuTmh/RpPt/CEj6Bghx/UIWcihquTpSkt\nsS89lY3UdDpOm/Nat1vkkd2XOkHMZgrRhoF8xxMIvRIc0YsEhYjHaweq60HClWls\n+4PYGaYcL0peMr4bPvl+bCAH\n-----END PRIVATE KEY-----\n",
+    "client_email": "tarek-project@roadbud-app.iam.gserviceaccount.com",
+    "client_id": "101442299314165558555",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tarek-project%40roadbud-app.iam.gserviceaccount.com"
+}
