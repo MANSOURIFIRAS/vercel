@@ -4,7 +4,6 @@ const home = require("./routes/home");
 const compostsRouter = require('./src/Presentation/routes/composts');
 
 
-const cors = require('cors');
 
 const app = express();
 const passport = require('passport');
@@ -27,15 +26,10 @@ app.use(
     { name: 'video', maxCount: 1 },
   ])
 );
-app.use(cors({
-  origin: 'http://localhost:4000',
-  methods: ['GET', 'POST', 'PUT', 'PATCH' , 'DELETE'],
-  credentials: true 
-}));
 
 
 
-require('dotenv').config({ path: `${__dirname}/.env` });
+
 
 
 app.use(cookieSession({
