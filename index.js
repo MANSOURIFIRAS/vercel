@@ -1,14 +1,16 @@
 // Import packages
 const express = require("express");
+
+
 const home = require("./routes/home");
 const compostsRouter = require('./src/Presentation/routes/composts');
-//const usersRouter = require('./src/Presentation/routes/users');
+const usersRouter = require('./src/Presentation/routes/users');
 const contractroutes=require('./src/Presentation/routes/contractroutes');
 const productsRouter = require('./src/Presentation/routes/products');
-//const googleRouter = require('./src/Presentation/routes/googleAuth');
+const googleRouter = require('./src/Presentation/routes/googleAuth');
 const shipmentroute=require('./src/Presentation/routes/shipmentroute');
-//const fbRouter = require('./src/Presentation/routes/fb');
-//const forgetPasswordMail = require('./src/Presentation/routes/forgetPasswordMail');
+const fbRouter = require('./src/Presentation/routes/fb');
+const forgetPasswordMail = require('./src/Presentation/routes/forgetPasswordMail');
 
 const FarmRouter = require('./src/Presentation/routes/farms');
 const PlantRouter = require('./src/Presentation/routes/plants');
@@ -18,6 +20,9 @@ const commandsRouter = require('./src/Presentation/routes/commands');
 
 
 const app = express();
+const passport = require('passport');
+require('./src/Presentation/middlwares/passport');
+
 const multer = require('multer');
 
 const cookieSession = require('cookie-session');//
@@ -58,6 +63,8 @@ app.set("view engine","ejs")
 app.use(session({ secret: 'ilovescotchscotchyscotchscotch' }));
 app.use(cookieParser());
 
+app.use(passport.initialize());
+app.use(passport.session()); 
 
 
 app.use(express.json());
@@ -78,12 +85,12 @@ mongoose.connect(
 // Routes
 app.use("/home", home);
 app.use("/composts", compostsRouter);
-// app.use('/users', usersRouter);
+app.use('/users', usersRouter);
 app.use('/products', productsRouter);
-// app.use('/google', googleRouter);
-// app.use('/forget', forgetPasswordMail)
-// app.use('/fb', fbRouter);
-// app.use('/forget', forgetPasswordMail);
+app.use('/google', googleRouter);
+app.use('/forget', forgetPasswordMail)
+app.use('/fb', fbRouter);
+app.use('/forget', forgetPasswordMail);
 app.use('/contract',contractroutes);
 app.use('/farms',FarmRouter);
 app.use('/plants',PlantRouter);
