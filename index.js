@@ -2,7 +2,19 @@
 const express = require("express");
 const home = require("./routes/home");
 const compostsRouter = require('./src/Presentation/routes/composts');
+const usersRouter = require('./src/Presentation/routes/users');
+const contractroutes=require('./src/Presentation/routes/contractroutes');
+const productsRouter = require('./src/Presentation/routes/products');
+const googleRouter = require('./src/Presentation/routes/googleAuth');
+const shipmentroute=require('./src/Presentation/routes/shipmentroute');
+const fbRouter = require('./src/Presentation/routes/fb');
+const forgetPasswordMail = require('./src/Presentation/routes/forgetPasswordMail');
 
+const FarmRouter = require('./src/Presentation/routes/farms');
+const PlantRouter = require('./src/Presentation/routes/plants');
+const AnimalRouter = require('./src/Presentation/routes/animals');
+const ratingRouter = require('./src/Presentation/routes/rating');
+const commandsRouter = require('./src/Presentation/routes/commands');
 
 
 const app = express();
@@ -66,6 +78,19 @@ mongoose.connect(
 // Routes
 app.use("/home", home);
 app.use("/composts", compostsRouter);
+app.use('/users', usersRouter);
+app.use('/products', productsRouter);
+app.use('/google', googleRouter);
+app.use('/forget', forgetPasswordMail)
+app.use('/fb', fbRouter);
+app.use('/forget', forgetPasswordMail);
+app.use('/contract',contractroutes);
+app.use('/farms',FarmRouter);
+app.use('/plants',PlantRouter);
+app.use('/animals',AnimalRouter);
+app.use('/rating',ratingRouter)
+app.use('/commands',commandsRouter)
+app.use('/shipment',shipmentroute);
 
 // connection
 const port = 3000;
