@@ -10,13 +10,13 @@ const app = express();
 const passport = require('passport');
 const multer = require('multer');
 
-var cookieSession = require('cookie-session');//
+const cookieSession = require('cookie-session');//
 require('./src/Presentation/middlwares/passport');
 
 
 
 
-var cookieSession = require('cookie-session');
+const cookieSession = require('cookie-session');
 const { json } = require( "body-parser");
 
 app.use(
