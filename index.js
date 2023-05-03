@@ -51,6 +51,16 @@ app.use(cookieParser());
 app.use(express.json());
 
 
+const mongoose = require('mongoose');
+mongoose.set('strictQuery', false);
+mongoose.connect(
+  'mongodb+srv://BioUpDataBase:4CB4OrcVWrlP1LvW@bioup.gkbagbx.mongodb.net/?retryWrites=true&w=majority',
+  {
+    useNewUrlParser: true
+  },
+  console.log('connected to database !!!!'),
+);
+
 
 
 // Routes
