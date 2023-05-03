@@ -16,7 +16,6 @@ require('./src/Presentation/middlwares/passport');
 
 
 
-const cookieSession = require('cookie-session');
 const { json } = require( "body-parser");
 
 app.use(
