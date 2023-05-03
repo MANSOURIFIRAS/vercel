@@ -22,6 +22,12 @@ const multer = require('multer');
 
 const cookieSession = require('cookie-session');
 
+const cors = require('cors');
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'PATCH' , 'DELETE'],
+  credentials: true 
+}));
 
 
 
