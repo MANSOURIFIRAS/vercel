@@ -15,27 +15,27 @@ const passport = require('passport');
 const multer = require('multer');
 
 var cookieSession = require('cookie-session');//
-require('./Presentation/middlwares/passport');
+require('./src/Presentation/middlwares/passport');
 
 // initial route
 app.get("/", (req, res) => {
   res.json({ message: "School space backend initial ..." });
 });
-var usersRouter = require('./Presentation/routes/users');
-var contractroutes=require('./Presentation/routes/contractroutes');
-var productsRouter = require('./Presentation/routes/products');
-var googleRouter = require('./Presentation/routes/googleAuth');
-var shipmentroute=require('./Presentation/routes/shipmentroute');
-var fbRouter = require('./Presentation/routes/fb');
-var forgetPasswordMail = require('./Presentation/routes/forgetPasswordMail');
+var usersRouter = require('./src/Presentation/routes/users');
+var contractroutes=require('./src/Presentation/routes/contractroutes');
+var productsRouter = require('./src/Presentation/routes/products');
+var googleRouter = require('./src/Presentation/routes/googleAuth');
+var shipmentroute=require('./src/Presentation/routes/shipmentroute');
+var fbRouter = require('./src/Presentation/routes/fb');
+var forgetPasswordMail = require('./src/Presentation/routes/forgetPasswordMail');
 
-var FarmRouter = require('./Presentation/routes/farms');
-var PlantRouter = require('./Presentation/routes/plants');
-var AnimalRouter = require('./Presentation/routes/animals');
-var ratingRouter = require('./Presentation/routes/rating');
-var compostsRouter = require('./Presentation/routes/composts');
-var commandsRouter = require('./Presentation/routes/commands');
-var shipmentroute=require('./Presentation/routes/shipmentroute');
+var FarmRouter = require('./src/Presentation/routes/farms');
+var PlantRouter = require('./src/Presentation/routes/plants');
+var AnimalRouter = require('./src/Presentation/routes/animals');
+var ratingRouter = require('./src/Presentation/routes/rating');
+var compostsRouter = require('./src/Presentation/routes/composts');
+var commandsRouter = require('./src/Presentation/routes/commands');
+var shipmentroute=require('./src/Presentation/routes/shipmentroute');
 
 var cookieSession = require('cookie-session');
 const { json } = require( "body-parser");
