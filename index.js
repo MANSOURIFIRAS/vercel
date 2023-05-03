@@ -22,7 +22,6 @@ const multer = require('multer');
 
 const cookieSession = require('cookie-session');//
 
-require('./src/Presentation/middlwares/passport');
 
 
 
