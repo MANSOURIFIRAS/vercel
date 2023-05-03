@@ -2,7 +2,7 @@
 const express = require("express");
 const home = require("./routes/home");
 const compostsRouter = require('./src/Presentation/routes/composts');
-const usersRouter = require('./src/Presentation/routes/users');
+// const usersRouter = require('./src/Presentation/routes/users');
 const contractroutes=require('./src/Presentation/routes/contractroutes');
 const productsRouter = require('./src/Presentation/routes/products');
 // const googleRouter = require('./src/Presentation/routes/googleAuth');
@@ -78,7 +78,7 @@ mongoose.connect(
 // Routes
 app.use("/home", home);
 app.use("/composts", compostsRouter);
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);
 app.use('/products', productsRouter);
 // app.use('/google', googleRouter);
 app.use('/forget', forgetPasswordMail)
