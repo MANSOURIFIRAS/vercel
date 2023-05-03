@@ -17,7 +17,10 @@ const multer = require('multer');
 var cookieSession = require('cookie-session');//
 require('./Presentation/middlwares/passport');
 
-
+// initial route
+app.get("/", (req, res) => {
+  res.json({ message: "School space backend initial ..." });
+});
 var usersRouter = require('./Presentation/routes/users');
 var contractroutes=require('./Presentation/routes/contractroutes');
 var productsRouter = require('./Presentation/routes/products');
