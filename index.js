@@ -1,15 +1,13 @@
 // Import packages
 const express = require("express");
-
-
 const home = require("./routes/home");
 const compostsRouter = require('./src/Presentation/routes/composts');
 const usersRouter = require('./src/Presentation/routes/users');
 const contractroutes=require('./src/Presentation/routes/contractroutes');
 const productsRouter = require('./src/Presentation/routes/products');
-const googleRouter = require('./src/Presentation/routes/googleAuth');
+// const googleRouter = require('./src/Presentation/routes/googleAuth');
 const shipmentroute=require('./src/Presentation/routes/shipmentroute');
-const fbRouter = require('./src/Presentation/routes/fb');
+// const fbRouter = require('./src/Presentation/routes/fb');
 const forgetPasswordMail = require('./src/Presentation/routes/forgetPasswordMail');
 
 const FarmRouter = require('./src/Presentation/routes/farms');
@@ -20,9 +18,6 @@ const commandsRouter = require('./src/Presentation/routes/commands');
 
 
 const app = express();
-const passport = require('passport');
-require('./src/Presentation/middlwares/passport');
-
 const multer = require('multer');
 
 const cookieSession = require('cookie-session');//
@@ -63,8 +58,6 @@ app.set("view engine","ejs")
 app.use(session({ secret: 'ilovescotchscotchyscotchscotch' }));
 app.use(cookieParser());
 
-app.use(passport.initialize());
-app.use(passport.session()); 
 
 
 app.use(express.json());
@@ -87,9 +80,9 @@ app.use("/home", home);
 app.use("/composts", compostsRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
-app.use('/google', googleRouter);
+// app.use('/google', googleRouter);
 app.use('/forget', forgetPasswordMail)
-app.use('/fb', fbRouter);
+// app.use('/fb', fbRouter);
 app.use('/forget', forgetPasswordMail);
 app.use('/contract',contractroutes);
 app.use('/farms',FarmRouter);
