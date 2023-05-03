@@ -6,6 +6,7 @@ const compostsRouter = require('./src/Presentation/routes/composts');
 
 
 const app = express();
+const multer = require('multer');
 
 const cookieSession = require('cookie-session');//
 
@@ -14,6 +15,15 @@ const cookieSession = require('cookie-session');//
 
 const { json } = require( "body-parser");
 
+app.use(
+  multer({
+    limits: { fieldSize: 100 * 1024 * 1024 },
+    dest: 'uploads/',
+  }).fields([
+    { name: 'file', maxCount: 1 },
+    { name: 'video', maxCount: 1 },
+  ])
+);
 
 
 
@@ -35,7 +45,7 @@ const cookieParser = require('cookie-parser')
 
 app.set("view engine","ejs")
 app.use(session({ secret: 'ilovescotchscotchyscotchscotch' }));
-
+app.use(cookieParser());
 
 
 
