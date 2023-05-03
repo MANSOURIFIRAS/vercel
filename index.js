@@ -115,6 +115,6 @@ app.use('/shipment',shipmentroute);
 
 // Start the server
 
-app.listen(3000, () => {
+app.listen(3000||process.env.PORT, () => {
   console.log('Server is listening on port 3000');
 });
